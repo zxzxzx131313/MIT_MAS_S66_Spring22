@@ -67,8 +67,6 @@ void ofApp::drawFboTest(){
         char_paths.push_back(paths);
     }
 
-//    ofTranslate(mouseX,mouseY);
-//    int char_idx = ofMap(max(min(mouseY,ofGetWindowHeight()), 0)+max(min(ofGetWindowWidth(),mouseX), 0), 0, ofGetWindowWidth()+ofGetWindowHeight(), 0, 23);
     int char_idx_rad = ofRandom(0,23);
 
     char_paths[char_idx_rad][0].draw(mouseX, mouseY);
@@ -82,36 +80,6 @@ void ofApp::draw(){
     ofSetColor(255,255,255);
     rgbaFboFloat.draw(0,0);
     
-    
-
-
-
-//
-//    ofBackground(0);
-//
-//    ofSeedRandom(mouseX*1000);
-//
-//    string s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//    vector <char> characters(s.begin(), s.end());
-//    vector <ofMesh> char_paths;
-//
-//
-//    ofColor color(255,255,0);
-//
-//    for (char &c : characters) {
-//        string s(1, c);
-//        float x,y;
-//        ofMesh mesh = font.getStringMesh(s, x, y);
-//        mesh.addColors(&color);
-//        char_paths.push_back(mesh);
-//    }
-//
-//    ofTranslate(mouseX,mouseY);
-////    int char_idx = ofMap(max(min(mouseY,ofGetWindowHeight()), 0)+max(min(ofGetWindowWidth(),mouseX), 0), 0, ofGetWindowWidth()+ofGetWindowHeight(), 0, 23);
-//    int char_idx_rad = ofRandom(0,23);
-//    cout<< char_idx_rad << endl;
-//
-//    char_paths[char_idx_rad].draw();
 }
 
 //--------------------------------------------------------------
